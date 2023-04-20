@@ -13,3 +13,20 @@ ALTRIEMENTI
 const evenOrOdd = prompt('Scegli pari o dispari');
 
 const userNumber = parseInt(prompt('Dammi un numero da 1 a 5 compresi:'));
+
+const randomNumComputer = getRandomInteger(1, 5);
+
+function getRandomInteger(min, max) {
+  const random = Math.floor(Math.random() * (max - min + 1) ) + min;
+   return random;
+}
+
+
+if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
+    console.log('Non hai inserito un valore corretto, ricarica la pagina!');
+} else {
+    console.log(`Il numero random del computer è:`, randomNumComputer);
+    
+    console.log(`Il numero random dell'utente è:`, userNumber);
+}
+
