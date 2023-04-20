@@ -9,3 +9,6 @@ SE numero utente > numero computer
 ALTRIEMENTI 
     stampa Il computer ha vinto
 */
+
+const evenOrOdd = parseInt(prompt('Scegli pari o dispari'));
+
