@@ -10,7 +10,7 @@ ALTRIMENTI
     stampa computer ha vinto
 */
 
-const evenOrOdd = prompt('Scegli pari o dispari');
+let evenOrOdd = prompt('Scegli pari o dispari');
 
 const userNumber = parseInt(prompt('Dammi un numero da 1 a 5 compresi:'));
 
@@ -37,13 +37,25 @@ if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
     console.log(`Il numero random dell'utente è:`, userNumber);
 }
 
-console.log(sum);
+console.log('La somma dei 2 numeri è:', sum);
+
+if (evenOrOdd === 'pari'){
+    evenOrOdd = true
+} else if (evenOrOdd === 'dispari'){
+    evenOrOdd = true
+}
 
 
 if (isEven(sum)) {
     console.log('pari');
 } else {
     console.log('dispari')
+}
+
+if (evenOrOdd == isEven(sum)) {
+    console.log(`L'utente ha vinto!`);
+} else {
+    console.log(`Il computer ha vinto!`);
 }
 
 
