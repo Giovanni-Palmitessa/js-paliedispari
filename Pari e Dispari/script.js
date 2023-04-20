@@ -24,6 +24,10 @@ function getRandomInteger(min, max) {
    return random;
 }
 
+function isEven(number) {
+    return number % 2 == 0
+}
+
 
 if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
     console.log('Non hai inserito un valore corretto, ricarica la pagina!');
@@ -34,6 +38,13 @@ if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
 }
 
 console.log(sum);
+
+
+if (isEven(sum)) {
+    console.log('pari');
+} else {
+    console.log('dispari')
+}
 
 
 
