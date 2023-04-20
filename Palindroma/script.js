@@ -29,6 +29,8 @@ function reverseString(str) {
 
 if (reverseString(wordReverse) === wordReverse) {
     console.log('La parola inserita è palindroma!');
+    document.getElementById('result').innerHTML = 'La parola inserita è palindroma!';
 } else {
     console.log('la parola inserita non è palindroma!');
+    document.getElementById('result').innerHTML = 'La parola inserita non è palindroma!';
 }
