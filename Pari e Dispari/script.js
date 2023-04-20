@@ -10,5 +10,6 @@ ALTRIEMENTI
     stampa Il computer ha vinto
 */
 
-const evenOrOdd = parseInt(prompt('Scegli pari o dispari'));
+const evenOrOdd = prompt('Scegli pari o dispari');
 
+const userNumber = parseInt(prompt('Dammi un numero da 1 a 5 compresi:'));
