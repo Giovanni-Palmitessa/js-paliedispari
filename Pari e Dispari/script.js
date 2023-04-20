@@ -39,11 +39,11 @@ if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
 
 console.log('La somma dei 2 numeri è:', sum);
 
-if (evenOrOdd === 'pari'){
-    evenOrOdd = true
-} else if (evenOrOdd === 'dispari'){
-    evenOrOdd = true
-}
+// if (evenOrOdd === 'pari'){
+//     evenOrOdd = true
+// } else if (evenOrOdd === 'dispari'){
+//     evenOrOdd = true
+// }
 
 
 if (isEven(sum)) {
@@ -52,10 +52,12 @@ if (isEven(sum)) {
     console.log('dispari')
 }
 
-if (evenOrOdd == isEven(sum)) {
+if ((evenOrOdd === `pari` && isEven(sum) === true) || (evenOrOdd === `dispari` && isEven(sum) === false)) {
     console.log(`L'utente ha vinto!`);
+    document.getElementById('win-or-lose').innerHTML = "L'utente ha vinto!"
 } else {
     console.log(`Il computer ha vinto!`);
+    document.getElementById('win-or-lose').innerHTML = "Il computer ha vinto!"
 }
 
 
