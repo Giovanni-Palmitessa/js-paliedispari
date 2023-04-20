@@ -16,6 +16,9 @@ const userNumber = parseInt(prompt('Dammi un numero da 1 a 5 compresi:'));
 
 const randomNumComputer = getRandomInteger(1, 5);
 
+const sum = userNumber + randomNumComputer;
+
+
 function getRandomInteger(min, max) {
   const random = Math.floor(Math.random() * (max - min + 1) ) + min;
    return random;
@@ -29,4 +32,8 @@ if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
     
     console.log(`Il numero random dell'utente è:`, userNumber);
 }
+
+console.log(sum);
+
+
 
