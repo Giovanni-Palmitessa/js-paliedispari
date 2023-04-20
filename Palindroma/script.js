@@ -7,7 +7,6 @@ creare una funzione di controllo
 
 const wordReverse = prompt('inserisci una parola e ti dirò se è palindroma!');
 
-
 function reverseString(str) {
     const splitString = str.split(""); 
 
@@ -27,7 +26,9 @@ function reverseString(str) {
 reverseString(wordReverse);
 
 
-if (joinArray === wordReverse) {
+
+
+if (reverseString === wordReverse) {
     console.log('La parola inserita è palindroma!');
 } else {
     console.log('la parola inserita non è palindroma!');
