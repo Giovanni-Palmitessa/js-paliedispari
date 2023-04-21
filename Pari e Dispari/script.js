@@ -10,7 +10,7 @@ ALTRIMENTI
     stampa computer ha vinto
 */
 
-let evenOrOdd = prompt('Scegli pari o dispari');
+let evenOrOdd = prompt('Scegli pari o dispari').trim().toLowerCase();
 
 const userNumber = parseInt(prompt('Dammi un numero da 1 a 5 compresi:'));
 
